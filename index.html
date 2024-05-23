@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: auto;
+            text-align: center;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+
+        h2 {
+            font-size: 2rem;
+            color: aqua;
+        }
+
+        span {
+            color: greenyellow;
+        }
+
+        .container {
+            width: 30%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .container img {
+            width: 10rem;
+        }
+
+        .items {
+            /* background: linear-gradient(30deg, rgb(29, 0, 56), black); */
+            background-color: rgb(204, 204, 204);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width:600px) {
+            body {
+                background-color: black;
+            }
+
+            .container {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+        <h2>Some <span>Logo</span> Works</h2><br>
+        <div class="container">
+
+            <div class="items">
+                <img src="img/airtel.JPG" alt="">
+                <h3>Airtel</h3>
+            </div>
+            <div class="items">
+                <img src="img/banner/hp-logo.jpg" alt="">
+                <h3>Hp</h3>
+            </div>
+            <div class="items">
+                <img src="img/banner/HP.JPG" alt="">
+                <h3>HP</h3>
+            </div>
+            <div class="items">
+                <img src="img/banner/IBM-logo.JPG" alt="">
+                <h3>IBM</h3>
+            </div>
+            <div class="items">
+                <img src="img/banner/Pepsi-logo.JPG" alt="">
+                <h3>Pepsi</h3>
+            </div>
+            <div class="items">
+                <img src="img/banner/Starplus-logo.JPG" alt="">
+                <h3>Starplus</h3>
+            </div>
+            <div class="items">
+                <img src="img/banner/sbi-logo.JPG" alt="">
+                <h3>SBI</h3>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
